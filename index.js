@@ -10,7 +10,7 @@ const app = express();
 mongoose.set("strictQuery", true);
 
 // Connect to MongoDB via URL:
-mongoose.connect("mongodb+srv://cvineetha2003:UhvwtIbCntka3cOt@cluster0.ehaf2fe.mongodb.net/jobboard");
+mongoose.connect("your_mogodb_url");
 
 var db = mongoose.connection;
 db.on("open", () => console.log("Connected to DB"));
